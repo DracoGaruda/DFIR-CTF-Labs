@@ -129,9 +129,9 @@ You have been provided with a disk triage of the compromised host. Your mission 
 ### Task 11
 **Question:** To maintain persistence after system reboots, the executable added an entry to a specific registry location. What is the full path of the registry key where the executable added its persistence mechanism?
 
-**Answer:** ``
+**Answer:** `HKU\S-1-5-21-403280985-4081385913-4248903659-500\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\svchostAS`
 
-**Explanation:** Filter for runkeys with Sysmon eventid 13 aa
+**Explanation:** Filter for runkeys with Sysmon eventid 13 as runkeys are good indicators for persistence
 
 
 > <img width="1715" height="1188" alt="Q11" src="https://github.com/user-attachments/assets/2aa7232a-aff5-4a6e-a226-b963c1f685a5" />
@@ -141,7 +141,7 @@ You have been provided with a disk triage of the compromised host. Your mission 
 ### Task 12
 **Question:** A VBS script was deployed as an additional persistence mechanism to maintain the malware's presence. What is the name of the VBS script executed by the malicious executable for persistence?
 
-**Answer:** ``
+**Answer:** `KOoNLZeCGlnQ.vbs`
 
 **Explanation:** Filter for sysmon eventid 11 and look for .vbs files
 
@@ -183,6 +183,7 @@ You have been provided with a disk triage of the compromised host. Your mission 
 > <img width="1605" height="1188" alt="Q15" src="https://github.com/user-attachments/assets/fa4487f0-4e70-4bff-b56c-4f49d5eefe50" />
 
 ---
+
 
 
 
