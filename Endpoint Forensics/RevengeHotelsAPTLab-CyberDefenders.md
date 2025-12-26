@@ -23,23 +23,25 @@ You have been provided with a disk triage of the compromised host. Your mission 
 ### Task 1
 **Question:** During the initial compromise, the threat actor distributed a phishing email containing a URL pointing to a malicious JavaScript file disguised as a legitimate document. What is the name of the JavaScript file downloaded from the phishing link?
 
-**Answer:** ``
+**Answer:** `invoice82962.js`
 
-**Explanation:**
+**Explanation:*Check for browswer ogsto look for potential downloads*
 
 
-> *Screenshot placeholder*
+> *<img width="1710" height="207" alt="Q1" src="https://github.com/user-attachments/assets/bc0cbde5-ff0a-484f-bda4-73d0f0dd965a" />
+*
 ---
 
 ### Task 2
 **Question:** The malicious JavaScript payload was hosted on a compromised website to facilitate the initial infection. What is the complete domain name that hosted the malicious JS file?
 
-**Answer:** ``
+**Answer:** `hotelx.rf.gd`
 
-**Explanation:**
+**Explanation:*Check for the URL for the same record*
 
 
-> *Screenshot placeholder*
+> *<img width="1715" height="244" alt="Q2" src="https://github.com/user-attachments/assets/290ed30f-d513-4b11-b6f0-cbb4ed7655fa" />
+*
 ---
 
 ### Task 3
@@ -184,6 +186,7 @@ You have been provided with a disk triage of the compromised host. Your mission 
 
 > *Screenshot placeholder*
 ---
+
 
 
 
