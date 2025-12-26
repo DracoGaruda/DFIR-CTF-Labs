@@ -6,13 +6,17 @@
 | **Platform** | Windows |
 | **Tasks** | 15 |
 
-## 1. Executive Summary
-*Summary of the incident goes here.*
 
-## 2. Timeline
-| Timestamp | Event |
-|-----------|-------|
-|           |       |
+## 1. Scenario
+
+*On September 28, 2025, the SOC team detected suspicious network activity from an administrator's workstation, including connections to an unknown external IP address and unauthorized security tool modifications. The user reported opening what appeared to be a legitimate document received via email earlier that day, after which their security software was mysteriously disabled.
+
+Initial triage reveals evidence of file creation in unusual locations and system configuration changes, suggesting a multi-stage attack with potential data exfiltration occurring hours after the initial compromise.
+
+You have been provided with a disk triage of the compromised host. Your mission is to reconstruct the complete attack chain, identify all malicious components, and determine the full scope of the compromise*
+
+## 2. Summary
+*Summary of the incident goes here.*
 
 ## 3. Challenge Solutions
 
@@ -180,4 +184,5 @@
 
 > *Screenshot placeholder*
 ---
+
 
