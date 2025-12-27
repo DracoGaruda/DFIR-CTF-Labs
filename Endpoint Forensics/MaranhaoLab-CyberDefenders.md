@@ -1,4 +1,4 @@
-# DFIR Report: MaranhaoLab
+# DFIR Report: MaranhaoLab - In progress
 
 | Metadata | Details |
 |----------|---------|
@@ -246,6 +246,7 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 
 > *Screenshot placeholder*
 ---
+
 
 
 
