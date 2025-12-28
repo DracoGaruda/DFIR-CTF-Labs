@@ -123,23 +123,19 @@ As a SOC analyst, you've been tasked with investigating these authentication ano
 ### Task 11
 **Question:** Navigate to Incidents in Microsoft Sentinel and open the newly created incident. Review the entities section, which shows all IP addresses involved in this attack. List all attacker IP addresses identified in the incident.
 
-**Answer:** ``
+**Answer:** `3.123.14.162, 3.123.14.126, 3.70.195.178`
 
-**Explanation:**
+> <img width="1276" height="1119" alt="Q11" src="https://github.com/user-attachments/assets/c5bc8dba-c4de-4945-b71a-698aa0768b1e" />
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 12
 **Question:** What is the minimum number of failed attempts from a single IP before Smart Lockout triggers for an unfamiliar location (based on default settings)?
 
-**Answer:** ``
+**Answer:** `10`
 
-**Explanation:**
+> <img width="1059" height="405" alt="Q12" src="https://github.com/user-attachments/assets/f08475d0-8737-476b-a9b0-fd368bd887d4" />
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 13
@@ -189,6 +185,7 @@ As a SOC analyst, you've been tasked with investigating these authentication ano
 **Answer:** `8`
 
 ---
+
 
 
 
