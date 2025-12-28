@@ -14,7 +14,7 @@ As a SOC analyst, you've been tasked with investigating these authentication ano
 
 ## 2. Summary
 
-
+On June 29, 2025, a targeted password spray attack originating from German IP addresses struck the "Compliant Secure" Azure AD environment, impacting 89 unique user accounts and generating significant volumes of 50126 (invalid credentials) and 50053 (Smart Lockout) errors. Leveraging Microsoft Sentinel analytics with specific authentication thresholds, investigators traced the activity to a cluster of IPs—most notably 3.123.15.9—and successfully isolated a single compromised account, louisa.hartis@compliantsecure.store, amidst the noise of failed attempts. The incident response protocol necessitated immediate session revocation via the revokeSignInSessions Graph API, alongside strategic hardening measures such as blocking legacy authentication and tuning Smart Lockout parameters to neutralize future credential-based attacks.
 
 ## 3. Challenge Solutions
 
@@ -185,6 +185,7 @@ As a SOC analyst, you've been tasked with investigating these authentication ano
 **Answer:** `8`
 
 ---
+
 
 
 
