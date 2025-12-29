@@ -14,6 +14,7 @@ You have been provided with Azure sign-in logs, audit logs, and storage access l
 
 ## 2. Summary
 
+The investigation revealed a targeted attack beginning with a password spray campaign originating from 52.59.240.166 (Germany), which successfully compromised the account mharmon@compliantsecure.store. Following initial access, the attacker pivoted to a secondary infrastructure in Singapore (52.221.180.165) to conduct post-exploitation activities. To establish persistence, the adversary registered two malicious applications, "OfficeRead" and "VaultApp," and escalated privileges by assigning the Global Administrator role to a second user, lwilliams@compliantsecure.store. The attack culminated in data exfiltration, where the attacker accessed the mainstoragestore01 storage account and successfully downloaded a sensitive file named Confidintal.png.
 
 ## 3. Challenge Solutions
 
@@ -112,13 +113,15 @@ You have been provided with Azure sign-in logs, audit logs, and storage access l
 ### Task 10
 **Question:** The attacker successfully downloaded a sensitive file from the storage account. What is the name of the exfiltrated file?
 
-**Answer:** ``
+**Answer:** `Confidintal.png`
 
-**Explanation:**
+**Explanation:** Filter for the malicious IP 52.221.180.165 in storage blob logs
 
 
-> *Screenshot placeholder*
+> <img width="1662" height="392" alt="Q10" src="https://github.com/user-attachments/assets/0cbc2884-a44e-42be-abe7-9a306ad92fd9" />
+
 ---
+
 
 
 
