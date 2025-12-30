@@ -6,13 +6,15 @@
 | **Platform** | Windows |
 | **Tasks** | 15 |
 
-## 1. Executive Summary
-*Summary of the incident goes here.*
+## 1. Scenario
 
-## 2. Timeline
-| Timestamp | Event |
-|-----------|-------|
-|           |       |
+The SOC team was notified by the IT department regarding a potentially compromised workstation recently reassigned to a new government employee named Keela. Upon receiving the workstation, Keela reported unusually slow performance and suspected the system had not been properly cleaned before being handed over. The IT team initiated a routine cleanup but identified indicators of suspicious activity suggesting that the machine, and possibly the department’s website may have been previously compromised.
+
+As a forensics investigator, you have been provided with a disk image of Keela’s workstation. Your task is to perform a comprehensive investigation to uncover any signs of malicious activity, reconstruct the timeline of events, and assess the scope and impact of the potential compromise.
+
+## 2. Sumamry
+
+
 
 ## 3. Challenge Solutions
 
@@ -180,4 +182,5 @@
 
 > *Screenshot placeholder*
 ---
+
 
