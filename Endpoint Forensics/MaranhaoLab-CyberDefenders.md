@@ -14,7 +14,7 @@ Eager to try it, the gamer downloaded the file and executed the installer. Unbek
 
 Within a short time, unusual activity triggered alerts on the Security Operations Center's (SOC) in GOAT Company's monitoring dashboard. The gamer's machine was observed making outbound requests to a malicious domain and a suspicious external IP address. Endpoint logs also showed evidence of process injection, suggesting credential theft. The Security Operations Center (SOC) quickly isolated the machine and saved a full disk image for your analysis.
 
-## 2. Summary
+## 2. DFIR Analysis Summary
 
 
 ## 3. Challenge Solutions
@@ -246,6 +246,7 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 
 > *Screenshot placeholder*
 ---
+
 
 
 
