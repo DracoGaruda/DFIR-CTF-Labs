@@ -12,7 +12,7 @@ On November 14, 2025, security monitoring detected suspicious authentication act
 
 You have been provided with Azure sign-in logs, audit logs, and storage access logs from the affected tenant. Your mission is to investigate the incident, determine how the attacker gained initial access, identify what persistence mechanisms were established, document any privilege changes, and confirm whether sensitive data was accessed or exfiltrated
 
-## 2. Summary
+## 2. DFIR Analysis Summary
 
 The investigation revealed a targeted attack beginning with a password spray campaign originating from 52.59.240.166 (Germany), which successfully compromised the account mharmon@compliantsecure.store. Following initial access, the attacker pivoted to a secondary infrastructure in Singapore (52.221.180.165) to conduct post-exploitation activities. To establish persistence, the adversary registered two malicious applications, "OfficeRead" and "VaultApp," and escalated privileges by assigning the Global Administrator role to a second user, lwilliams@compliantsecure.store. The attack culminated in data exfiltration, where the attacker accessed the mainstoragestore01 storage account and successfully downloaded a sensitive file named Confidintal.png.
 
@@ -121,6 +121,7 @@ The investigation revealed a targeted attack beginning with a password spray cam
 > <img width="1662" height="392" alt="Q10" src="https://github.com/user-attachments/assets/0cbc2884-a44e-42be-abe7-9a306ad92fd9" />
 
 ---
+
 
 
 
