@@ -1,5 +1,4 @@
-# <img width="377" height="127" alt="logo" src="https://github.com/user-attachments/assets/0d257f14-bcb0-4583-be22-de63cbe99fed" />
-DFIR Report: WorkFromHome
+# <img width="377" height="127" alt="logo" src="https://github.com/user-attachments/assets/0d257f14-bcb0-4583-be22-de63cbe99fed" /> DFIR Report: WorkFromHome
 
 
 | Metadata | Details |
@@ -249,6 +248,7 @@ The investigation reveals a targeted intrusion beginning on May 27, 2025, where 
 **Explanation:** Use autospy to review CryptchaceURL
 
 ---
+
 
 
 
