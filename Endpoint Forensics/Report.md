@@ -2,7 +2,7 @@
 
 | Metadata | Details |
 |----------|---------|
-| **Date** | 2025-12-19 |
+| **Date** | 2025-11-17 |
 | **Platform** | Windows |
 | **Tasks** | 25 |
 
@@ -21,10 +21,9 @@
 
 **Answer:** `http://login.wowzalnc.co.th/logon.php`
 
-**Explanation:**
-Check the Chrome browser downloads
+**Explanation:** Check the Chrome browser downloads
 
-![Proof](./screenshots/Task 1.png)
+> <img width="1571" height="143" alt="Task 1" src="https://github.com/user-attachments/assets/bcad8cee-68a0-413b-8539-c590d3b96686" />
 ---
 
 ### Task 2
@@ -32,10 +31,9 @@ Check the Chrome browser downloads
 
 **Answer:** `2025-05-27 11:59:57`
 
-**Explanation:**
-Check in 4624 logs for logon type 10
+**Explanation:** Check in 4624 logs for logon type 10
 
-![Proof](./screenshots/Task 2.png)
+> <img width="1113" height="664" alt="Task 2" src="https://github.com/user-attachments/assets/0725c801-3bd8-411b-8073-c681f5b327e3" />
 ---
 
 ### Task 3
@@ -43,10 +41,9 @@ Check in 4624 logs for logon type 10
 
 **Answer:** `C:\Users\otello.j\Desktop\Working\Proposal to CFO.pptx`
 
-**Explanation:**
-Run Zimmerman tool lnkcmd on recent folder
+**Explanation:** Run Zimmerman tool lnkcmd on recent folder
 
-![Proof](./screenshots/Task 3.png)
+> <img width="1898" height="220" alt="Task 3" src="https://github.com/user-attachments/assets/f5735508-8953-4b47-9b6b-38c7a423eb70" />
 ---
 
 ### Task 4
@@ -54,10 +51,6 @@ Run Zimmerman tool lnkcmd on recent folder
 
 **Answer:** `SeManageVolumePrivilege`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 5
@@ -65,10 +58,6 @@ Run Zimmerman tool lnkcmd on recent folder
 
 **Answer:** `SeManageVolumeExploit.exe`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 6
@@ -76,10 +65,8 @@ Run Zimmerman tool lnkcmd on recent folder
 
 **Answer:** `http://freehackingtool.com/tools/PrintConfig.dll`
 
-**Explanation:**
-Reviewing the Chromes browser downloads
+**Explanation:** Reviewing the Chromes browser downloads
 
-> *Screenshot placeholder*
 ---
 
 ### Task 7
@@ -87,10 +74,9 @@ Reviewing the Chromes browser downloads
 
 **Answer:** `The user shut down the browser`
 
-**Explanation:**
-review the interrup_reason which is 41
+**Explanation:** review the interrup_reason which is 41
 
-![Proof](./screenshots/Task 7.png)
+> <img width="1597" height="192" alt="Task 7" src="https://github.com/user-attachments/assets/05234709-9f4c-47c1-8af8-fca9f799d6e8" />
 ---
 
 ### Task 8
@@ -98,10 +84,8 @@ review the interrup_reason which is 41
 
 **Answer:** `certutil.exe`
 
-**Explanation:**
-Upon reviewing the logs
+**Explanation:** Upon reviewing the logs
 
-> *Screenshot placeholder*
 ---
 
 ### Task 9
@@ -109,10 +93,10 @@ Upon reviewing the logs
 
 **Answer:** `2025-05-28 12:45:37`
 
-**Explanation:**
-review the usnjrnl logs to get download time based on creation time
+**Explanation:** Review the usnjrnl logs to get download time based on creation time
 
-![Proof](./screenshots/Task 9_11)
+><img width="1854" height="565" alt="Task 9_11" src="https://github.com/user-attachments/assets/f3d7a634-00b8-40b1-b64a-58b15d334485" />
+
 ---
 
 ### Task 10
@@ -120,10 +104,8 @@ review the usnjrnl logs to get download time based on creation time
 
 **Answer:** `C:\Windows|System32\spool\drivers\x64\3\Printconfig.dll`
 
-**Explanation:**
+**Explanation:** By filtering for printconfig.dll we can find the original dll filepath in $MFT logs
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 11
@@ -131,10 +113,8 @@ review the usnjrnl logs to get download time based on creation time
 
 **Answer:** `2025-05-28 12:47:06`
 
-**Explanation:**
-Review UsnJrnl look for deleted actions
+**Explanation:** Review UsnJrnl look for deleted actions
 
-> *Screenshot placeholder*
 ---
 
 ### Task 12
@@ -142,10 +122,9 @@ Review UsnJrnl look for deleted actions
 
 **Answer:** `2025-05-28 15:19:35`
 
-**Explanation:**
-Review windows defender logs. Filter for mailicous dll and you should be able to find information for next few questions
+**Explanation:** Review windows defender logs. Filter for mailicous dll and you should be able to find information for next few questions
 
-![Proof](./screenshots/Task 12_13_14_15.png)
+> <img width="1411" height="367" alt="Task 12_!3_!4_!5" src="https://github.com/user-attachments/assets/b2b1e33e-99a1-4a1b-8b7f-5ffd79cfabbd" />
 ---
 
 ### Task 13
@@ -153,10 +132,8 @@ Review windows defender logs. Filter for mailicous dll and you should be able to
 
 **Answer:** `{854A20FB-2D44-457D-992F-EF13785D2B51}`
 
-**Explanation:**
+**Explanation:** CLSID is provided with each detection
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 14
@@ -164,10 +141,8 @@ Review windows defender logs. Filter for mailicous dll and you should be able to
 
 **Answer:** `PrintNotify`
 
-**Explanation:**
+**Explanation:** The detection points out service being exploited
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 15
@@ -175,10 +150,8 @@ Review windows defender logs. Filter for mailicous dll and you should be able to
 
 **Answer:** `916564984e38f8bb91921cd4e40b64156a72142b`
 
-**Explanation:**
+**Explanation:** Sha1 file is provided within the windows defender logsfor the associated detection
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 16
@@ -186,10 +159,9 @@ Review windows defender logs. Filter for mailicous dll and you should be able to
 
 **Answer:** `C:\windows\system32\wbem\tzres.dll`
 
-**Explanation:**
-Parse MFT and filter for similar time and observe the results
+**Explanation:** Parse MFT and filter for similar time and observe the results
 
-![Proof](./screenshots/Task 16_17.png)
+> <img width="1890" height="82" alt="Task 16_17" src="https://github.com/user-attachments/assets/8690253d-496d-4cf1-954e-40381d893b22" />
 ---
 
 ### Task 17
@@ -197,10 +169,8 @@ Parse MFT and filter for similar time and observe the results
 
 **Answer:** `2025-05-28 12:54:23`
 
-**Explanation:**
+**Explanation:** Timestamp is found in the above finding
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 18
@@ -208,10 +178,9 @@ Parse MFT and filter for similar time and observe the results
 
 **Answer:** `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\a.vbs`
 
-**Explanation:**
-Review MFT logs. We originally notices a.vbs in browser downlaod history
+**Explanation:** Review MFT logs. We originally noticed a.vbs in browser downlaod history
 
-> *Screenshot placeholder*
+> <img width="1902" height="451" alt="task18" src="https://github.com/user-attachments/assets/d3bacb89-213a-40ef-b8c5-f03f1af50c53" />
 ---
 
 ### Task 19
@@ -219,10 +188,10 @@ Review MFT logs. We originally notices a.vbs in browser downlaod history
 
 **Answer:** `cmd.exe /c systeminfo`
 
-**Explanation:**
+**Explanation:** review Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 
 
-> *Screenshot placeholder*
+> <img width="632" height="124" alt="Task19" src="https://github.com/user-attachments/assets/7d56d608-30a1-49c0-853a-65dc7cd36a67" />
 ---
 
 ### Task 20
@@ -230,10 +199,6 @@ Review MFT logs. We originally notices a.vbs in browser downlaod history
 
 **Answer:** `2025-05-28 12:56:11`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 21
@@ -241,10 +206,8 @@ Review MFT logs. We originally notices a.vbs in browser downlaod history
 
 **Answer:** `wmiprvse.exe`
 
-**Explanation:**
+**Explanation:** reviewing wmi logs would provide this information
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 22
@@ -252,10 +215,8 @@ Review MFT logs. We originally notices a.vbs in browser downlaod history
 
 **Answer:** `C:\Users\Public\Pictures\gg.tmp`
 
-**Explanation:**
-Review Powershell commandline logs
+**Explanation:** Review Powershell commandline logs
 
-![Proof](./screenshots/Task 23.png)
 ---
 
 ### Task 23
@@ -263,10 +224,9 @@ Review Powershell commandline logs
 
 **Answer:** `2025-05-28 15:04:41`
 
-**Explanation:**
-review event logs 4688 or powershell logs
+**Explanation:** review event logs 4688 or powershell logs
 
-> *Screenshot placeholder*
+> <img width="876" height="111" alt="Task 23" src="https://github.com/user-attachments/assets/96a1f807-a4b6-4c9e-867b-0e69f94aa345" />
 ---
 
 ### Task 24
@@ -274,10 +234,9 @@ review event logs 4688 or powershell logs
 
 **Answer:** `2025-05-28 15:04:41`
 
-**Explanation:**
-Check 4624 logsfor otello.j after the change of wallpaper 
+**Explanation:** Check 4624 logsfor otello.j after the change of wallpaper 
 
-> *Screenshot placeholder*
+> <img width="1285" height="665" alt="Task 24" src="https://github.com/user-attachments/assets/54f792b7-2322-4c4d-9c1c-0252fb22cd51" />
 ---
 
 ### Task 25
@@ -285,9 +244,8 @@ Check 4624 logsfor otello.j after the change of wallpaper
 
 **Answer:** `HACKED BY ANARCHY`
 
-**Explanation:**
-Use autospy to review CryptchaceURL
+**Explanation:** Use autospy to review CryptchaceURL
 
-> *Screenshot placeholder*
 ---
+
 
