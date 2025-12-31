@@ -1,3 +1,4 @@
+<img width="377" height="127" alt="logo" src="https://github.com/user-attachments/assets/6dc86a3a-dce6-496e-9e94-8779d1a20d70" />
 # DFIR Report: WorkFromHome
 
 | Metadata | Details |
@@ -10,7 +11,7 @@
 
 Wowza Enterprise (Wowza Inc.) has hired you to investigate an incident involving a workstation used by Otello John, which is believed to have been compromised by a threat actor. The attacker reportedly changed the desktop wallpaper to a questionable image. The IT team has already provided you with initial information, and it is your duty to report back your findings.
 
-## 2. DFIR Summary
+## 2. DFIR Analysis Summary
 
 The investigation reveals a targeted intrusion beginning on May 27, 2025, where a threat actor gained initial access to the otello.j workstation via a credential-harvesting phishing link (login.wowzalnc.co.th) and subsequent RDP connection. Once inside, the attacker conducted reconnaissance, accessing sensitive corporate documents and identifying the SeManageVolumePrivilege, which they exploited by leveraging the certutil.exe LOLBin to bypass browser defenses and download a malicious PrintConfig.dll. This file was used to replace the legitimate system driver, allowing the attacker to escalate to System privileges via the PrintNotify service. Persistence was established by deploying a hidden VBScript (a.vbs) in the Startup folder that utilized WMI (wmiprvse.exe) to load a secondary malicious payload (tzres.dll), culminating in the defacement of the victim's desktop with the message "HACKED BY ANARCHY" on May 28, 2025.
 
@@ -247,6 +248,7 @@ The investigation reveals a targeted intrusion beginning on May 27, 2025, where 
 **Explanation:** Use autospy to review CryptchaceURL
 
 ---
+
 
 
 
