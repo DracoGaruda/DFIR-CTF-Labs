@@ -16,6 +16,9 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 
 ## 2. DFIR Analysis Summary
 
+The user fell for a social engineering attack, downloading what they thought was 'Fnafdoomlauncher' from a Google Drive link. Once opened, the malware didn't just run once; it dug in by hiding a fake 'Updater' program in the user's local AppData folder and modifying the Registry to make sure it survived a reboot.
+
+Before doing any damage, it played it safe—using standard Windows commands (wmic) to look around and verify it was on a real machine rather than a security researcher's sandbox. The smoking gun came at the end: it forcibly killed the user's browser and opened a specific named pipe (ChromeDecryptIPC). That’s a clear signal it was hooking into the browser processes to scrape saved passwords and session cookies before sending that data out to its command-and-control server
 
 ## 3. Challenge Solutions
 
@@ -27,7 +30,6 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 **Explanation:** Review chrome History log file. Look for URL-downloads. 
 
 > <img width="1712" height="325" alt="Q1" src="https://github.com/user-attachments/assets/5b186164-797d-4746-ade2-65c014b02567" />
-
 ---
 
 ### Task 2
@@ -38,7 +40,6 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 **Explanation:** look for the start time of the download from previous log. Convert the timestamp 
 
 > <img width="1713" height="214" alt="Q2" src="https://github.com/user-attachments/assets/b4963e8a-caaa-420e-b166-938c2804d604" />
-
 ---
 
 ### Task 3
@@ -50,7 +51,6 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 
 
 > <img width="1717" height="399" alt="Q3" src="https://github.com/user-attachments/assets/e2ffd3c4-1134-4043-8011-fde8ec7cbd8d" />
-
 ---
 
 ### Task 4
@@ -61,7 +61,6 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 **Explanation:** Review sysmon logs for event id 1 and filter for Fnafdoomlauncher
 
 > <img width="803" height="66" alt="Q4" src="https://github.com/user-attachments/assets/a8444cf4-f470-4900-be1b-95b9d1e798db" />
-
 ---
 
 ### Task 5
@@ -72,7 +71,6 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 **Explanation:** the above log provides the inital dropper Fnafdoomlauncher.tmp
 
 > <img width="1717" height="36" alt="Q5" src="https://github.com/user-attachments/assets/03d58a70-84e2-4bd1-939d-f36e31e4fc09" />
-
 ---
 
 ### Task 6
@@ -80,19 +78,16 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 
 **Answer:** `C:\Users\Levi\AppData\Local\Programs\Microsoft Updater\`
 
-**Explanation:**
-
 ---
 
 ### Task 7
 **Question:** During execution, the secondary component was invoked with a victim-tagging token for C2 identification. What globally unique string was provided as the argument?
 
-**Answer:** ``
+**Answer:** `e90de8b2-eb79-4614-94f8-308f0f81573b`
 
-**Explanation:**
+**Explanation:** Review sysmon event id 1 logs. This will provide file creation even where the command is ""C:\Users\Levi\AppData\Local\Programs\Microsoft Updater\updater.exe" e90de8b2-eb79-4614-94f8-308f0f81573b"
 
-
-> *Screenshot placeholder*
+> <img width="772" height="445" alt="Q7" src="https://github.com/user-attachments/assets/3a8d475b-db49-4213-8350-b0ea9fa33579" />
 ---
 
 ### Task 8
@@ -100,7 +95,7 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 
 **Answer:** `C:\Users\Levi\AppData\Local\Programs\Microsoft Updater\Updater.exe`
 
-**Explanation:** Review sysmon logs for event id 1 to review reg.exe to review creation of registry keys
+**Explanation:** Review sysmon logs for event id 1 and filter for reg.exe to review creation of registry keys
 
 > <img width="3241" height="24" alt="Q8" src="https://github.com/user-attachments/assets/66e5f862-940f-4bf8-9243-ed0cb0446e84" />
 ---
@@ -119,10 +114,9 @@ Within a short time, unusual activity triggered alerts on the Security Operation
 
 **Answer:** `attrib +h +s`
 
-**Explanation:** Reviewing same Sysmon event id 1 would provide proof for these these command
+**Explanation:** Reviewing same Sysmon event id 1 this would provide proof for these these command
 
 > <img width="766" height="76" alt="Q10" src="https://github.com/user-attachments/assets/d8a7ee61-6586-475a-b2b9-5ab11664742c" />
-
 ---
 
 If you filter sysmon event id 1 and for cmd.exe you would find multiple discovery commands being run. below image provides all the discovery commands that where run by updater.exe
@@ -174,57 +168,50 @@ If you filter sysmon event id 1 and for cmd.exe you would find multiple discover
 ### Task 17
 **Question:** Attackers often terminate browsers before attempting to steal session data, cookies, or inject a malicious browser extension. What is the command that was used to forcibly terminate all browser processes?
 
-**Answer:** ``
+**Answer:** `taskkill  /F /IM msedge.exe`
 
-**Explanation:**
+**Explanation:** Reviewing same set of above logs would provide this command thats terminating edge browser
 
-
-> *Screenshot placeholder*
+> <img width="1713" height="251" alt="Q17" src="https://github.com/user-attachments/assets/f0d31cad-f0ed-4a9b-ab53-58af1703b951" />
 ---
 
 ### Task 18
 **Question:** After injection, the malware established an interprocess channel for credential theft. What named pipe was created to ferry stolen browser data?
 
-**Answer:** ``
+**Answer:** `ChromeDecryptIPC_e7e223c5-50d5-40ae-8513-64c9962789c2`
 
-**Explanation:**
+**Explanation:** Filter for Sysmon logs event Id 17. Upon reviewing these logs for pipes created you will find "ChromeDecryptIPC" this is the only one for browser IPC.
 
-
-> *Screenshot placeholder*
+> <img width="673" height="175" alt="Q18" src="https://github.com/user-attachments/assets/983a32fb-3725-4f82-adca-cf7a2e9a5b54" />
 ---
 
 ### Task 19
 **Question:** To enrich host discovery with geolocation data, the malware beaconed to an external resolver. Which service endpoint did it query?
 
-**Answer:** ``
+**Answer:** `ip-api.com`
 
-**Explanation:**
+**Explanation:** Review sysmon event id 22 for dns queries and filter for malware "updater.exe" this will provide domain the malware is beaconing to and its associated ip address.
 
-
-> *Screenshot placeholder*
+> <img width="2375" height="24" alt="Q1920" src="https://github.com/user-attachments/assets/a15b312e-2024-48c2-8ccd-7fd19b337379" />
 ---
 
 ### Task 20
 **Question:** Blocking by domain is insufficient; analysts confirmed the resolved address of the geolocation API. Which single IP must be blacklisted?
 
-**Answer:** ``
+**Answer:** `208.95.112.1`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 21
 **Question:** During network traffic analysis, the malware's outbound request did not resolve to a direct host but instead terminated at Cloudflare's edge network, a common tactic to conceal attacker infrastructure. Which two IP addresses were returned as part of this resolution?
 
-**Answer:** ``
+**Answer:** `172.67.144.96, 104.21.71.100`
 
-**Explanation:**
+**Explanation:** Reviewing other Dns queries by updater.exe. You will find the two ips that were returned.
 
-
-> *Screenshot placeholder*
+> <img width="2356" height="106" alt="Q21" src="https://github.com/user-attachments/assets/4f8725fa-a588-44b6-bc92-d71964b5f1d6" />
 ---
+
 
 
 
