@@ -140,7 +140,6 @@ If you review logs with requests for oldsite/. Path traversal vulnerability is e
 
 **Answer:** `C:\Users\hoshisora\AppData\Local\Temp\music.exe`
 
-**Explanation:** Based on out discovery from previous powershell decode the path is "$env:TEMP\music.exe"
 ---
 
 ### Task 14
@@ -213,6 +212,7 @@ If you review logs with requests for oldsite/. Path traversal vulnerability is e
 
 > <img width="1454" height="150" alt="Q17" src="https://github.com/user-attachments/assets/d9a97e0b-8fcb-487f-a922-242c23f59f4d" />
 ---
+
 
 
 
