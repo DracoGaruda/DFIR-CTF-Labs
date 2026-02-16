@@ -1,4 +1,4 @@
-# DFIR Report: MaranhaoLab 
+# DFIR Writeup: MaranhaoLab 
 
 | Metadata | Details |
 |----------|---------|
@@ -211,6 +211,7 @@ If you filter sysmon event id 1 and for cmd.exe you would find multiple discover
 
 > <img width="2356" height="106" alt="Q21" src="https://github.com/user-attachments/assets/4f8725fa-a588-44b6-bc92-d71964b5f1d6" />
 ---
+
 
 
 
