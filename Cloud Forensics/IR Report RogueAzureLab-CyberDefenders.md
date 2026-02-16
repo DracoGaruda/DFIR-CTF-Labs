@@ -3,7 +3,7 @@
 **Date:** December 22, 2025  
 **Investigator:** Sid  
 **Case Status:** Closed  
-**Machine/Lab Name:** RogueAzureLab (Hack The Box)  
+**Machine/Lab Name:** RogueAzureLab (Cyberdefenders.org)  
 
 ---
 
