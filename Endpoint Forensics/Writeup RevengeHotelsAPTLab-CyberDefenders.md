@@ -1,4 +1,4 @@
-# DFIR Report: RevengeHotelsAPTLab
+# DFIR Writeup: RevengeHotelsAPTLab
 
 | Metadata | Details |
 |----------|---------|
@@ -178,6 +178,7 @@ Once established, the malware initiated command and control communication with t
 > <img width="1605" height="1188" alt="Q15" src="https://github.com/user-attachments/assets/fa4487f0-4e70-4bff-b56c-4f49d5eefe50" />
 
 ---
+
 
 
 
