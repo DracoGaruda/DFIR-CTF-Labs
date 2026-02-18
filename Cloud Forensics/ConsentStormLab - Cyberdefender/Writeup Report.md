@@ -8,7 +8,13 @@
 
 ## 1. Scenario
 
+On January 21, 2026, the Security Operations Center (SOC) at NexGen Energy received alerts indicating suspicious activity within their Microsoft Entra ID and Azure environment.
 
+The incident appears to have started when an employee in the Finance department received what looked like a legitimate email from a colleague. After interacting with the email, unusual OAuth consent activity and unauthorized access patterns were detected across multiple accounts and Azure resources.
+
+Initial triage suggests the attacker gained access to sensitive cloud resources, pivoted through multiple accounts, and potentially accessed confidential financial data. Threat intelligence indicates the TTPs may be associated with a known APT group.
+
+Your task is to investigate the full scope of this breach, trace the attacker's movements, and document the techniques used throughout the attack chain.
 
 ## 2. DFIR Summary
 
@@ -73,7 +79,7 @@
 ### Task 6
 **Question:** What is the attacker's first IP address used in this attack, and from which country does this IP originate?
 
-**Answer:** ``
+**Answer:** `51.89.156.153, China`
 
 **Explanation:**
 
@@ -289,4 +295,5 @@
 
 > *Screenshot placeholder*
 ---
+
 
