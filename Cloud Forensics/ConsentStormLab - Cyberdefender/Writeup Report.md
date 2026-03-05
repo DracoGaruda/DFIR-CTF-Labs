@@ -29,7 +29,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="930" height="963" alt="Q1" src="https://github.com/user-attachments/assets/6f10596b-5b9e-488a-acbb-77448f76ee9a" />
+
 ---
 
 ### Task 2
@@ -40,7 +41,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="738" height="833" alt="Q2" src="https://github.com/user-attachments/assets/a8b879b3-87eb-4d34-b78e-fb27ca0689e4" />
+
 ---
 
 ### Task 3
@@ -51,7 +53,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="1012" height="358" alt="Q3" src="https://github.com/user-attachments/assets/dee7f8e8-3dee-44ee-94f8-90aee5ffe701" />
+
 ---
 
 ### Task 4
@@ -62,7 +65,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="934" height="1017" alt="Q4" src="https://github.com/user-attachments/assets/6ee6e864-4486-43c8-b1fd-6e6943aa7abc" />
+
 ---
 
 ### Task 5
@@ -73,7 +77,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="656" height="490" alt="Q5" src="https://github.com/user-attachments/assets/55d87048-3d88-4e54-9e33-706fb827c23f" />
+
 ---
 
 ### Task 6
@@ -84,7 +89,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="1165" height="583" alt="Q6" src="https://github.com/user-attachments/assets/ffcc31b5-a705-454e-a029-ced32f3a885f" />
+
 ---
 
 ### Task 7
@@ -95,7 +101,11 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="663" height="434" alt="Q7_1" src="https://github.com/user-attachments/assets/39cd5175-f010-477c-a744-58a4266b7577" />
+
+<img width="530" height="325" alt="Q7_2" src="https://github.com/user-attachments/assets/f00c193c-04cd-415e-9a18-14ad4a4499c1" />
+
+
 ---
 
 ### Task 8
@@ -106,7 +116,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="513" height="322" alt="Q8" src="https://github.com/user-attachments/assets/d79c763e-6f4b-41cd-ad59-2c3855ae3121" />
+
 ---
 
 ### Task 9
@@ -117,7 +128,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="1204" height="990" alt="Q9_10" src="https://github.com/user-attachments/assets/42cfcc4d-f662-4ea0-8ed6-e8fd9f6162ad" />
+
 ---
 
 ### Task 10
@@ -125,10 +137,6 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `svc-automation@nexgenenergy.com`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 11
@@ -139,7 +147,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="683" height="390" alt="Q11" src="https://github.com/user-attachments/assets/73faa169-7c07-4213-bbd6-831ff811a982" />
+
 ---
 
 ### Task 12
@@ -149,8 +158,6 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Explanation:**
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 13
@@ -161,7 +168,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="991" height="993" alt="Q13" src="https://github.com/user-attachments/assets/444d53b1-b269-411e-90ed-d84f7306d5b5" />
+
 ---
 
 ### Task 14
@@ -183,7 +191,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="1210" height="523" alt="Q14" src="https://github.com/user-attachments/assets/52f84df3-2629-426d-8f97-34a2cdcd4bd8" />
+
 ---
 
 ### Task 16
@@ -194,7 +203,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:**
 
 
-> *Screenshot placeholder*
+> <img width="1210" height="523" alt="Q14" src="https://github.com/user-attachments/assets/3630dc91-37f2-49af-9001-e6f47400c874" />
+
 ---
 
 ### Task 17
@@ -235,10 +245,6 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `STORM-0558`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 21
@@ -246,10 +252,6 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `T1528`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 22
@@ -257,21 +259,13 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `T1556`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 23
 **Question:** What is the operation name recorded in the AzureDiagnostics logs when a secret is successfully retrieved from a Key Vault?
 
-**Answer:** ``
+**Answer:** `SecretGet`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 24
@@ -279,10 +273,8 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `Do not allow user consent`
 
-**Explanation:**
+**Explanation:** only authorized users should be able to grant concent to applications
 
-
-> *Screenshot placeholder*
 ---
 
 ### Task 25
@@ -290,10 +282,9 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `8`
 
-**Explanation:**
+**Explanation:** Default maximum validity period is 8 hours
 
-
-> *Screenshot placeholder*
 ---
+
 
 
