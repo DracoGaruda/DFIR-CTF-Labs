@@ -123,7 +123,7 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 ### Task 9
 **Question:** The attacker explored the Automation Account to find credentials. What is the name of the Automation Account that was accessed?
 
-**Answer:** ``
+**Answer:** `AutomateOps`
 
 **Explanation:**
 
@@ -285,6 +285,7 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 **Explanation:** Default maximum validity period is 8 hours
 
 ---
+
 
 
 
