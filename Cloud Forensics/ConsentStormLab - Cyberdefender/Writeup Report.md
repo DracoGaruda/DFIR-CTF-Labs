@@ -212,10 +212,6 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `176.31.90.129`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 18
@@ -223,21 +219,12 @@ Your task is to investigate the full scope of this breach, trace the attacker's 
 
 **Answer:** `Investor-Presentation-2026.pptx`
 
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 19
 **Question:** How many files in total were accessed by the attacker on the final target account?
 
 **Answer:** `7`
-
-**Explanation:**
-
-
-> *Screenshot placeholder*
 ---
 
 ### Task 20
